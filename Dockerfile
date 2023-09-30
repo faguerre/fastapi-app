@@ -11,4 +11,6 @@ RUN pip install --upgrade pip && \
 
 RUN pip install -r app/requirements.txt
 
-CMD ["uvicorn", "app.main:app", "--workers", "1", "--host", "0.0.0.0", "--port", "5000"]
+EXPOSE 5000
+
+CMD ["uvicorn", "app.main:app", "--workers", "1", "--port", "5000"]
