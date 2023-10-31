@@ -1,5 +1,3 @@
-# It will run when is a change in the main branch
-
 name: Build an Push Python Image to Google Cloud Platform
 on:
   push:
